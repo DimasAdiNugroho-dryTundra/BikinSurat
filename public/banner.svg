@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" width="960" height="280">
+  <defs>
+    <!-- Background Gradient: Deep Slate to Midnight Indigo -->
+    <linearGradient id="bannerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16" />
+      <stop offset="40%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Subtle Radial Glows -->
+    <radialGradient id="glowBlue" cx="20%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="glowCyan" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Text Gradient -->
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+
+    <!-- Line Gradient -->
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Logo Defs -->
+    <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="45%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="logoPaper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <linearGradient id="logoFold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+    <linearGradient id="logoPen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="logoSwoosh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+    <filter id="logoShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#0284c7" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Banner Outer Container -->
+  <rect x="2" y="2" width="956" height="276" rx="16" fill="url(#bannerBg)" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Glowing Atmosphere -->
+  <rect x="2" y="2" width="956" height="276" rx="16" fill="url(#glowBlue)" pointer-events="none" />
+  <rect x="2" y="2" width="956" height="276" rx="16" fill="url(#glowCyan)" pointer-events="none" />
+
+  <!-- Subtle Grid Pattern Lines -->
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <line x1="40" y1="0" x2="40" y2="280" />
+    <line x1="100" y1="0" x2="100" y2="280" />
+    <line x1="160" y1="0" x2="160" y2="280" />
+    <line x1="220" y1="0" x2="220" y2="280" />
+    <line x1="280" y1="0" x2="280" y2="280" />
+    <line x1="340" y1="0" x2="340" y2="280" />
+    <line x1="400" y1="0" x2="400" y2="280" />
+    <line x1="460" y1="0" x2="460" y2="280" />
+    <line x1="520" y1="0" x2="520" y2="280" />
+    <line x1="580" y1="0" x2="580" y2="280" />
+    <line x1="640" y1="0" x2="640" y2="280" />
+    <line x1="700" y1="0" x2="700" y2="280" />
+    <line x1="760" y1="0" x2="760" y2="280" />
+    <line x1="820" y1="0" x2="820" y2="280" />
+    <line x1="880" y1="0" x2="880" y2="280" />
+    <line x1="920" y1="0" x2="920" y2="280" />
+
+    <line x1="0" y1="40" x2="960" y2="40" />
+    <line x1="0" y1="100" x2="960" y2="100" />
+    <line x1="0" y1="160" x2="960" y2="160" />
+    <line x1="0" y1="220" x2="960" y2="220" />
+  </g>
+
+  <!-- ==================== LEFT: LOGO EMBLEM ==================== -->
+  <g transform="translate(60, 50)" filter="url(#logoShadow)">
+    <!-- Squircle Background -->
+    <rect x="0" y="0" width="180" height="180" rx="42" fill="url(#logoBg)" stroke="#60a5fa" stroke-width="1.5" stroke-opacity="0.4" />
+
+    <!-- Scaled Inner Logo Content (180/512 = 0.3515) -->
+    <g transform="translate(0, 0) scale(0.3515)">
+      <!-- Paper Sheet -->
+      <g filter="url(#cardShadow)">
+        <path d="M 132 108 L 305 108 L 380 183 L 380 404 L 132 404 Z" fill="url(#logoPaper)" />
+        <path d="M 305 108 L 380 183 L 305 183 Z" fill="url(#logoFold)" />
+        
+        <!-- Document Text Lines -->
+        <rect x="165" y="152" width="95" height="14" rx="7" fill="#3b82f6" opacity="0.9" />
+        <rect x="165" y="215" width="165" height="9" rx="4.5" fill="#94a3b8" opacity="0.75" />
+        <rect x="165" y="243" width="145" height="9" rx="4.5" fill="#94a3b8" opacity="0.65" />
+        <rect x="165" y="271" width="155" height="9" rx="4.5" fill="#94a3b8" opacity="0.65" />
+        <rect x="165" y="299" width="115" height="9" rx="4.5" fill="#94a3b8" opacity="0.55" />
+      </g>
+
+      <!-- Signature Swoosh -->
+      <path d="M 165 372 C 200 360, 240 380, 280 366 C 310 355, 335 348, 355 352" 
+            fill="none" stroke="url(#logoSwoosh)" stroke-width="8" stroke-linecap="round" />
+
+      <!-- Fountain Pen Nib -->
+      <g transform="rotate(-38, 360, 310)">
+        <rect x="338" y="110" width="34" height="175" rx="12" fill="url(#logoPen)" />
+        <rect x="338" y="275" width="34" height="10" fill="#38bdf8" />
+        <path d="M 338 285 L 347 335 L 363 335 L 372 285 Z" fill="#1e293b" />
+        <path d="M 347 335 L 355 358 L 363 335 Z" fill="#ffffff" />
+        <line x1="355" y1="337" x2="355" y2="352" stroke="#0f172a" stroke-width="1.5" />
+        <rect x="350" y="125" width="10" height="80" rx="4" fill="#93c5fd" opacity="0.9" />
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT: BRANDING & TYPOGRAPHY ==================== -->
+  <g transform="translate(280, 52)">
+    <!-- Small Category Eyebrow Badge -->
+    <g transform="translate(0, 8)">
+      <rect x="0" y="0" width="224" height="24" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-opacity="0.4" />
+      <circle cx="12" cy="12" r="4" fill="#22c55e" />
+      <text x="24" y="16" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="600" letter-spacing="0.8">DESKTOP LOCAL-FIRST TOOL</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="78" fill="url(#titleGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.8">
+      BikinSurat
+    </text>
+
+    <!-- Tagline -->
+    <text x="0" y="108" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="400">
+      Otomasi Pembuatan Dokumen &amp; Generator Surat Berpresisi Tinggi
+    </text>
+
+    <!-- Dividing Glow Line -->
+    <line x1="0" y1="124" x2="600" y2="124" stroke="url(#lineGrad)" stroke-width="1.5" />
+
+    <!-- Feature Pills / Highlights -->
+    <g transform="translate(0, 142)">
+      <!-- Pill 1: 100% Offline -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="138" height="28" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="18" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">🔒 100% Local-First</text>
+      </g>
+
+      <!-- Pill 2: Tauri v2 + Rust -->
+      <g transform="translate(148, 0)">
+        <rect x="0" y="0" width="144" height="28" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="18" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">⚡ Tauri v2 + Rust</text>
+      </g>
+
+      <!-- Pill 3: 1:1 Word Export -->
+      <g transform="translate(302, 0)">
+        <rect x="0" y="0" width="142" height="28" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="18" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">📄 1:1 Word (.docx)</text>
+      </g>
+
+      <!-- Pill 4: Isolated Print -->
+      <g transform="translate(454, 0)">
+        <rect x="0" y="0" width="134" height="28" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+        <text x="12" y="18" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="600">🖨️ Presisi Cetak</text>
+      </g>
+    </g>
+  </g>
+</svg>
+

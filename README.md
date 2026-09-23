@@ -1,19 +1,20 @@
 <div align="center">
 
-<img src="./public/logo.svg" alt="BikinSurat Logo" width="128" height="128" />
+<img src="public/banner.svg" alt="BikinSurat Banner" width="100%" />
 
-# BikinSurat
+<br />
+<br />
 
-**Otomasi Pembuatan Dokumen & Generator Surat Kantor Berbasis Desktop Local-First**
-
-[![Tauri v2](https://img.shields.io/badge/Tauri-v2.2-blue?logo=tauri&logoColor=white&style=flat-square)](https://tauri.app/)
-[![React 19](https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black&style=flat-square)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/)
-[![Rust](https://img.shields.io/badge/Rust-Backend-DEA584?logo=rust&logoColor=black&style=flat-square)](https://www.rust-lang.org/)
-[![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square)](https://tailwindcss.com/)
-[![SQLite](https://img.shields.io/badge/SQLite-WAL_Mode-003B57?logo=sqlite&logoColor=white&style=flat-square)](https://www.sqlite.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-f59e0b.svg?style=flat-square)](LICENSE)
-[![Offline First](https://img.shields.io/badge/Security-100%25_Zero--Network-22c55e?style=flat-square)](#-keamanan--privasi-100-local-first)
+<p align="center">
+  <a href="https://tauri.app/"><img src="https://img.shields.io/badge/Tauri-v2.2-blue?logo=tauri&logoColor=white&style=flat-square" alt="Tauri v2" /></a>&nbsp;
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-19.0-61DAFB?logo=react&logoColor=black&style=flat-square" alt="React 19" /></a>&nbsp;
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.7-3178C6?logo=typescript&logoColor=white&style=flat-square" alt="TypeScript" /></a>&nbsp;
+  <a href="https://www.rust-lang.org/"><img src="https://img.shields.io/badge/Rust-Backend-DEA584?logo=rust&logoColor=black&style=flat-square" alt="Rust" /></a>&nbsp;
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square" alt="Tailwind CSS v4" /></a>&nbsp;
+  <a href="https://www.sqlite.org/"><img src="https://img.shields.io/badge/SQLite-WAL_Mode-003B57?logo=sqlite&logoColor=white&style=flat-square" alt="SQLite" /></a>&nbsp;
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-f59e0b.svg?style=flat-square" alt="License: MIT" /></a>&nbsp;
+  <a href="#-keamanan--privasi-100-local-first"><img src="https://img.shields.io/badge/Security-100%25_Zero--Network-22c55e?style=flat-square" alt="Offline First" /></a>
+</p>
 
 *Solusi penerbitan surat dinas, surat tugas, permohonan cuti, hingga paklaring secara cepat, konsisten, dan aman tanpa risiko kebocoran data organisasi ke cloud.*
 
@@ -204,7 +205,7 @@ Keamanan data organisasi adalah prioritas utama rancangan BikinSurat:
 
 ```text
 BikinSurat/
-├── public/                 # Aset publik statis (logo.svg, favicon)
+├── public/                 # Aset publik statis (banner.svg, logo.svg, favicon)
 ├── src/                    # Kode sumber antarmuka frontend React
 │   ├── components/         # Komponen UI modular
 │   │   ├── layout/         # Header, Sidebar, BrandLogo
