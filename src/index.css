@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-fallback: "Inter", "Segoe UI Variable Text", system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    color-scheme: light;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+  
+  body {
+    font-family: var(--font-fallback);
+  }
+
+  /* Enterprise sharp corners: All interactive items default to rounded-sm */
+  button, input, select, textarea {
+    border-radius: 0.125rem; /* rounded-sm */
+  }
+}
+
+/* 
+ * ATURAN KHUSUS KERTAS DIGITAL (.document-paper)
+ * Kertas surat digital WAJIB SELALU berwarna Putih Murni (#FFFFFF) 
+ * dengan teks Hitam Pekat (#000000) baik dalam mode terang maupun mode gelap.
+ */
+.document-paper {
+  background-color: #ffffff !important;
+  color: #09090b !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+  border: 1px solid #d4d4d8;
+  transition: transform 0.15s ease-out;
+}
+
+.dark .document-paper {
+  border-color: #3f3f46;
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.6);
+}
+
+.document-paper * {
+  color: inherit;
+}
+
+/* Custom desktop scrollbar - slim & precise */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(161, 161, 170, 0.25);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(161, 161, 170, 0.45);
+}
+
+/* Print Styles - Strictly isolate ONLY .document-paper */
+@media print {
+  @page {
+    margin: 0;
+    size: auto;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+
+  /* Hide all UI elements, sidebars, headers, and form panels */
+  header, aside, .no-print, .floating-toolbar, .print-hidden {
+    display: none !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  /* Only make document paper and its content visible */
+  .document-paper, .document-paper * {
+    visibility: visible !important;
+  }
+
+  .document-paper {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: 20mm !important;
+    transform: none !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    box-sizing: border-box !important;
+  }
+}
